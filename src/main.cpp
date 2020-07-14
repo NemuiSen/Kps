@@ -1,6 +1,5 @@
 #include <Window.hpp>
 #include <Kps.hpp>
-#include <consola>
 
 #ifdef DEBUG
 int main()
@@ -9,7 +8,7 @@ int WinMain()
 #endif
 {
 	sf::Font font;
-	if (!font.loadFromMemory(fileMemory.data, fileMemory.size))
+	if (!font.loadFromFile("resource/consola.ttf"))
 	{
 		cout << "Problema con la fuente" << endl;
 		system("pause");
