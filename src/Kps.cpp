@@ -11,14 +11,13 @@ Kps::Kps(sf::Font &font)
 
 void Kps::update()
 {
-	_act_kps += keys.getKeyCount();
-
 	if (_clock.getElapsedTime().asSeconds() > 1)
 	{
 		_act_kps = 0;
 		_clock.restart();
 	}
 
+	_act_kps += keys.getKeyCount();
 	if (_act_kps > _max_kps) _max_kps = _act_kps;
 
 	_text.setString
