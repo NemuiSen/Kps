@@ -8,7 +8,7 @@ int WinMain()
 #endif
 {
 	sf::Font font;
-	if (!font.loadFromFile("resource/consola.ttf"))
+	if (!font.loadFromFile("../resource/consola.ttf"))
 	{
 		cout << "Problema con la fuente" << endl;
 		system("pause");
