@@ -1,6 +1,6 @@
 #include <Window.hpp>
 #include <Kps.hpp>
-#include <consola.hpp>
+#include <consola>
 
 #ifdef DEBUG
 int main()
